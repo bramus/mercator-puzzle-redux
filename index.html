@@ -6,6 +6,19 @@
 
 	<link href="css/default.css" rel="stylesheet" />
 
+	<script type="text/javascript">
+		// Google Analytics - Please remove this block if you're using this code somehwere.
+		// If you don't remove it it'll mess up my stats
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', 'UA-107008-28']);
+		_gaq.push(['_trackPageview']);
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+
 	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=geometry"></script>
 	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="js/google.maps.Polygon.getBounds.js"></script>
@@ -33,8 +46,8 @@
 
 		/**
 		 * Get X random number beneath an upper limit
-		 * @param  {int} numItems The number of numbers you want generated
-		 * @param  {int} max	  The max value a number may be
+		 * @param	{int} numItems The number of numbers you want generated
+		 * @param	{int} max		The max value a number may be
 		 * @return {array}		The array with numbers
 		 */
 		var getXRandomNumbersBeneathMax = function(numItems, max) {
@@ -58,9 +71,9 @@
 
 		/**
 		 * Convert a set of GeoJSON coordinates to an set of coordinates usable in Google Maps
-		 * @param  {string} geometryType  The Geometry Type. Polygon or MultiPolygon
-		 * @param  {json} geoJSONCoords The coordindates in GeoJSON format
-		 * @return {array}			   The coordinates in a format usable by Google Maps
+		 * @param	{string} geometryType	The Geometry Type. Polygon or MultiPolygon
+		 * @param	{json} geoJSONCoords The coordindates in GeoJSON format
+		 * @return {array}				 The coordinates in a format usable by Google Maps
 		 */
 		var geoJSONCoords2GMapsCoords = function(geometryType, geoJSONCoords) {
 			var paths = [];
