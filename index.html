@@ -18,9 +18,8 @@
 			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
 		})();
 	</script>
-
-	<script src="//maps.googleapis.com/maps/api/js?v=3.exp&sensor=false&libraries=geometry"></script>
-	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="https://maps.googleapis.com/maps/api/js?v=3&key=AIzaSyBBkuG1503XfWSVpm-9Al69_Ud0qXSkb7Y&libraries=geometry"></script>
+	<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
 	<script src="js/google.maps.Polygon.getBounds.js"></script>
 	<script src="js/google.maps.Polygon.moveTo.js"></script>
 	<script src="js/google.maps.LatLngBounds.expand.js"></script>
@@ -100,6 +99,7 @@
 				minZoom: 1,
 				maxZoom: 6,
 				disableDoubleClickZoom: true,
+				scrollwheel: true,
 				center: new google.maps.LatLng(35, -20),
 				mapTypeId: google.maps.MapTypeId.TERRAIN
 			});
